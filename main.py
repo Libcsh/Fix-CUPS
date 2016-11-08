@@ -17,7 +17,6 @@ def capcico(line, allKeywords):
         words = words.replace(',', '')
         words = words.replace('.', '')
         words = words.replace(';', '')
-        words = words.replace('.', '')
         
         if words in allKeywords:
             original[i] = original[i].capitalize()
@@ -25,11 +24,11 @@ def capcico(line, allKeywords):
     return ' '.join(original)
 
 def main():
-    dfile = open('fixed.txt', 'w') 
+    dfile = open([empty text file], 'w') 
     f = open('allist.txt', 'r')
     allKeywords = f.read().split('\n')
 
-    with open('ulm.txt', 'r') as fileinput:
+    with open([text file to be fixed], 'r') as fileinput:
         for line in fileinput:
             low_line = lowit(line)
             dfile.write('\n' + capcico(low_line, allKeywords))
