@@ -14,7 +14,6 @@ def capcico(line, allKeywords):
         words = words.replace(',', '')
         words = words.replace('.', '')
         words = words.replace(';', '')
-        words = words.replace('.', '')
         
         if words in allKeywords:
             original[i] = original[i].capitalize()
